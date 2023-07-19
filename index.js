@@ -9,4 +9,4 @@ app.get('/', (req, res) => {
 	res.send('This is the home page!');
 });
 
-app.listen(process.env.PORT || 3000, () => console.log('Server started'));
+app.listen(process.env.PORT || 8080, () => console.log('Server started'));
