@@ -9,4 +9,6 @@ app.get('/', (req, res) => {
 	res.send('This is the home page!');
 });
 
-app.listen(process.env.PORT || 8080, () => console.log('Server started'));
+const port = process.env.PORT || 8080;
+
+app.listen(port, () => console.log(`Server started ${port}...`));
