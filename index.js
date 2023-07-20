@@ -13,6 +13,6 @@ app.get('/hey', (req, res) => {
 	res.json('This is the home page!');
 });
 
-const port = process.env.PORT || 3000;
+// const port = process.env.PORT || 3000;
 
-app.listen(port, () => console.log(`Server started ${port}...`));
+app.listen(3000, () => console.log(`Server started ${port}...`));
