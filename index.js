@@ -1,21 +1,18 @@
-import express from 'express';
-// import morgan from 'morgan';
-
-// const express = require('express');
-// const morgan = require('morgan');
+const express = require('express');
+const morgan = require('morgan');
 
 const app = express();
 
-// app.use(morgan('tiny'));
+app.use(morgan('tiny'));
 
 app.get('/', (req, res) => {
 	res.send('This is the home page!');
 });
 
 app.get('/hey', (req, res) => {
-	res.json('This is the home page!');
+	res.send('This is the home page!');
 });
 
-// const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 
-app.listen(3000, () => console.log(`Server started ${3000}...`));
+app.listen(port, () => console.log(`Server started ${port}...`));
