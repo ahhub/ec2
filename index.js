@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/hey', (req, res) => {
-	res.send('This is the home page!');
+	res.json('This is the home page!');
 });
 
 const port = process.env.PORT || 8080;
